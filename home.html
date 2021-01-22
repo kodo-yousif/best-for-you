@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Best for You</title>
+	<link rel="stylesheet" type="text/css" href="Makeup.css">
+	<script src="https://kit.fontawesome.com/fa0196ec72.js" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" type="image/png" href="logo.png">
+</head>
+<body style="padding: 0vw; margin: 0vw;">
+	<div id="view_style_css" style="  position: fixed;
+	width: 100%;
+	height: 100%;
+	transition: 1s;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	align-items: space-between;
+	opacity: 1;
+	z-index: 10000;">
+	<h1 style="color:blue">Wait 5 Seconds</h1>
+		<h2>Please view the page with</h2><h2>width more than 1000px</br>height more than 700px</h2>
+		<h2>the web site is not responsive</h2>
+		<h3>Source code at:</h3>
+		<h4><a target="_blank" href="https://github.com/kodo-yousif/best-for-you">Here</a></h4>
+		<h3 style="color: red;">You can't reuse the logo ot has ©copyrights</h3>
+	<script>
+		setTimeout(() => {
+		document.getElementById('view_style_css').style.opacity="0";
+		setTimeout(() => {
+		document.getElementById('view_style_css').style.desplay="none";
+		document.getElementById('view_style_css').style.zIndex="-100";
+		}, 1000);
+	}, 5000);
+	</script>
+	</div>
+
+	<div id="myModal">
+		<span class="close">&times;</span>
+		<div class="boxing">
+			<iframe id="cinema" src="" frameborder="0" 
+			allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+	  </div>
+
+<header>
+
+	<a href="about.html" id="boxlogo"></a>
+
+
+	<div class="nav">
+	<ul>
+		<li><a href="home.html" id="active">Home</a></li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="filmm/filmm.html">Film</a>
+			<ul class="dropdown">
+				<li><a href="filmm/puzzle.html">Puzzle</a></li>
+				<li><a href="filmm/action.html">Action</a></li>
+				<li><a href="filmm/romance.html">Romance</a></li>
+				<li><a href="filmm/horor.html">Horor</a></li>
+				<li><a href="filmm/comedy.html">Comdey</a></li>
+				<li><a href="filmm/drama.html">Drama</a></li>
+				<li><a href="filmm/fantasy.html">Fantasy</a></li>
+				<li><a href="filmm/sport.html">Sport</a></li>
+				<li><a href="filmm/cartoon.html">Cartoon</a></li>
+			</ul>
+		
+		</li>
+		<li><a href="contact.html">Contact</a></li>
+		<li><a href="profile.html">Profile</a></li>
+	</ul>
+</div>
+
+<ul class="navsocial">
+	<li><a target="_blank" href="https://www.facebook.com/koko.like99" class="social"><i class="fab fa-facebook-square" id="facebook"></i></a></li>
+	<li><a target="_blank" href="https://www.youtube.com/channel/UCTTe8Z9hZVS9Kc1Y0Cqwl2A" class="social"><i class="fab fa-youtube" id="youtube"></i></a></li>
+	<li><a target="_blank" href="https://www.instagram.com/kodo._.k/?hl=en" class="social"><i class="fab fa-instagram" id="instagram"></i></a></li>
+	<li><a target="_blank" href="https://www.snapchat.com/" class="social"><i class="fab fa-snapchat-square" id="snapchat"></i></a></li>
+</ul>
+
+</header>
+
+<div class="felkrdn">
+
+</div>
+
+
+
+
+<div id="main">
+	<section class="slideshow">
+ 
+		<ul class="navigation">
+   
+		  <li class="navigation-item active">
+			<span class="rotate-holder"></span>
+			<span onclick="change(
+				'Now you see me' , 'puzzle/nowcm1.jpg' , ' 7.3/10' , 'https://www.youtube.com/embed/4OtM9j2lcUA', 
+				'Now you see me 2' , 'puzzle/nowcm2.jpg' , ' 6.5/10' , 'https://www.youtube.com/embed/4I8rVcSQbic',
+				'Inception' , 'puzzle/inception.jpg' , ' 8.8/10' , 'https://www.youtube.com/embed/YoHD9XEInc0',
+				'The Prestige' , 'puzzle/prst.jpg' , ' 8.5/10' , 'https://www.youtube.com/embed/ijXruSzfGEc',)" class="background-holder" style="background-image: url(l_film/film_p.jpg);"></span>
+		  </li>
+		  
+		  <li class="navigation-item">
+			<span class="rotate-holder"></span>
+			<span onclick="change(
+			'John Wick' , 'action/jw.jpg' , ' 7.4/10' , 'https://www.youtube.com/embed/C0BMx-qxsP4', 
+			'300' , 'action/spartan.jpg' , ' 7.6/10' , 'https://www.youtube.com/embed/UrIbxk7idYA',
+			'Fallout' , 'action/mimposible.jpg' , ' 7.7/10' , 'https://www.youtube.com/embed/wb49-oV0F78',
+			'Six Underground' , 'action/sixu.jpg' , ' 6.1/10' , 'https://www.youtube.com/embed/YLE85olJjp8',)" class="background-holder" style="background-image: url(l_film/film_a.jpg);"></span>
+		  </li>
+		 
+		  <li class="navigation-item">
+			<span class="rotate-holder"></span>
+			<span onclick="change(
+				'Titanic' , 'romance/titanic.jpg' , ' 7.8/10' , 'https://www.youtube.com/embed/kVrqfYjkTdQ', 
+				'Me Before You' , 'romance/mb4u.jpg' , ' 7.4/10' , 'https://www.youtube.com/embed/Eh993__rOxA',
+				'Dilwale' , 'romance/Dilwale.jpg' , ' 5.2/10' , 'https://www.youtube.com/embed/AHuOo1DLcRc',
+				'Rab Ne Bana' , 'romance/yes.jpg' , ' 7.2/10' , 'https://www.youtube.com/embed/eBi8syxPd14',)" class="background-holder" style="background-image: url(l_film/film_r.jpg);"></span>
+		  </li>
+		 
+		  <li class="navigation-item">
+			<span class="rotate-holder"></span>
+			<span onclick="change(
+				'The conjuring' , 'horror/conj.jpg' , ' 7.5/10' , 'https://www.youtube.com/embed/k10ETZ41q5o', 
+				'Get Out' , 'horror/get.jpg' , ' 7.7/10' , 'https://www.youtube.com/embed/DzfpyUB60YY',
+				'A Quiet Place' , 'horror/a.jpg' , ' 7.5/10' , 'https://www.youtube.com/embed/WR7cc5t7tv8',
+				'Saw' , 'horror/saw.jpg' , ' 7.6/10' , 'https://www.youtube.com/embed/S-1QgOMQ-ls',)" class="background-holder" style="background-image: url(l_film/film_h.jpg);"></span>
+		  </li>
+		
+		  <li class="navigation-item">
+			<span class="rotate-holder"></span>
+			<span onclick="change(
+				'The Campaign ' , 'comedy/camp.jpg' , ' 6.1/10' , 'https://www.youtube.com/embed/4qQ6UcU_JiE', 
+				'The Dictator' , 'comedy/dict.jpg' , ' 6.4/10' , 'https://www.youtube.com/embed/cYplvwBvGA4',
+				'C.Intelligence' , 'comedy/rock.jpg' , ' 6.3/10' , 'https://www.youtube.com/embed/0FKctBraQj0',
+				'Accepted' , 'comedy/acc.jpg' , ' 6.4/10' , 'https://www.youtube.com/embed/5nrCh2we0Gw',)" class="background-holder" style="background-image: url(l_film/film_c.jpg);"></span>
+		  </li>
+		
+		  <li class="navigation-item">
+			<span class="rotate-holder"></span>
+			<span onclick="change(
+				'A Star Is Born' , 'drama/born.png' , ' 7.7/10' , 'https://www.youtube.com/embed/nSbzyEJ8X9E', 
+				'Dunkirk' , 'drama/dunkirk.jpg' , ' 7.9/10' , 'https://www.youtube.com/embed/F-eMt3SrfFU',
+				'La La Land' , 'drama/land.jpg' , ' 8/10' , 'https://www.youtube.com/embed/0pdqf4P9MB8',
+				'Creed' , 'drama/creed.jpg' , ' 7.6/10' , 'https://www.youtube.com/embed/Uv554B7YHk4',)" class="background-holder" style="background-image: url(l_film/drama.jpg);"></span>
+		  </li>
+		  
+		  <li class="navigation-item">
+			<span class="rotate-holder"></span>
+			<span onclick="change(
+				'Return of King' , 'fantasy/return.jpg' , ' 8.9/10' , 'https://www.youtube.com/embed/r5X-hFf6Bwo', 
+				'Maleficent' , 'fantasy/malafesent.jpg' , ' 7/10' , 'https://www.youtube.com/embed/JIIgXEGAZgE',
+				'Endgame' , 'fantasy/endgame.jpeg' , ' 8.4/10' , 'https://www.youtube.com/embed/TcMBFSGVi1c',
+				'Justice League' , 'fantasy/leage.jpg' , ' 6.4/10' , 'https://www.youtube.com/embed/3cxixDgHUYw',)" class="background-holder" style="background-image: url(l_film/fantasy.jpg);"></span>
+		  </li>
+		   
+		  <li class="navigation-item">
+			<span class="rotate-holder"></span>
+			<span onclick="change(
+				'The Sandlot' , 'sport/sand.jpg' , ' 7.8/10' , 'https://www.youtube.com/embed/_pz8mbHxBWE', 
+				'Remember Titans' , 'sport/titans.jpg' , ' 7.8/10' , 'https://www.youtube.com/embed/nPhu9XsRl4M',
+				'Rudy' , 'sport/rudy.jpg' , ' 7.5/10' , 'https://www.youtube.com/embed/firK4y-3bKw',
+				'Rocky' , 'sport/rocky.jpg' , ' 8.1/10' , 'https://www.youtube.com/embed/I2zFQmHWVCI',)" class="background-holder" style="background-image: url(l_film/sport.jpg);"></span>
+		  </li>
+		   
+		  <li class="navigation-item">
+			<span class="rotate-holder"></span>
+			<span onclick="change(
+				'Frozen' , 'anim/frozen.jpg' , ' 7.4/10' , 'https://www.youtube.com/embed/TbQm5doF_Uc', 
+				'Ratatouille' , 'anim/rat.jpg' , ' 8/10' , 'https://www.youtube.com/embed/NgsQ8mVkN8w',
+				'Shrek' , 'anim/shrek.jpg' , ' 7.8/10' , 'https://www.youtube.com/embed/CwXOrWvPBPk',
+				'Kung Fu Panda' , 'anim/panda.jpg' , ' 7.5/10' , 'https://www.youtube.com/embed/PXi3Mv6KMzY',)" class="background-holder" style="background-image: url(l_film/animation.jpg);"></span>
+		  </li>
+		 
+  
+		</ul>
+		
+		<div class="detail">
+		 
+		  <div class="detail-item active">
+			<div class="headline">puzzle</div>
+			<div class="background" style="background-image: url(b_film/film_p.jpg); height: 100%; background-size: cover; background-position: center;"></div>
+		  </div>
+		  
+		  <div class="detail-item">
+			<div class="headline">action</div>
+			<div class="background" style="background-image: url(b_film/film_a.jpg);"></div>
+		  </div>
+		  
+		  <div class="detail-item">
+			<div class="headline">romance</div>
+			<div class="background" style="background-image: url(b_film/film_r.jpg);"></div>
+		  </div>
+		  
+		  <div class="detail-item">
+			<div class="headline">horror</div>
+			<div class="background" style="background-image: url(b_film/film_h.jpg);"></div>
+		  </div>
+		  
+		  <div class="detail-item">
+			<div class="headline">comedy</div>
+			<div class="background" style="background-image: url(b_film/film_c.jpg);"></div>
+		  </div>
+		  
+		  <div class="detail-item">
+			<div class="headline">drama</div>
+			<div class="background" style="background-image: url(b_film/drama.jpg);"></div> 
+		  </div>
+		  
+		  <div class="detail-item">
+			<div class="headline">fantasy</div>
+			<div class="background" style="background-image: url(b_film/fantasy.jpg);"></div>
+		  </div>
+		  
+		  <div class="detail-item">
+			<div class="headline">sport</div>
+			<div class="background" style="background-image: url(b_film/sport.jpg);"></div>
+		  </div>
+		  
+		  <div class="detail-item">
+			<div class="headline">cartoon</div>
+			<div class="background" style="background-image: url(b_film/animation.jpg);"></div>
+		  </div>
+		  
+		  
+		</div>
+		
+  
+	  </section>
+
+	  <div class="topic">
+		  <ul class="fantastic_four">
+			<li><div class="rasm" id="rrr1" style="background: url(puzzle/nowcm1.jpg); background-repeat: no-repeat;  background-size: cover; background-position: center; border-radius: 0.5vw;">
+				<div class="after">
+				</div>
+				<div class="name">
+					<p class="title" id="ttt1">
+						Now you see me
+					</p>
+					<p class="rating" id="rat1">
+						<i class="fas fa-star" style="color: yellow;"> 7.3/10</i>
+					</p>
+					<p style="position: absolute; top: 4.5vw; left: 3.2vw;" >
+						<i onclick="hatm('https://www.youtube.com/embed/4OtM9j2lcUA')" id="y1" class="far fa-play-circle play"></i>
+					</p>
+					<p class="oop1" id="tra1">
+						trailer
+					</p>
+				</div>
+			</div><div class="rizbandy" id="riz1">#1</div></li>
+
+			<li><div class="rasm" id="rrr2" style="background: url(puzzle/nowcm2.jpg); background-repeat: no-repeat;  background-size: cover; background-position: center; border-radius: 0.5vw;">
+				<div class="after">
+				</div>
+				<div class="name">
+					<p class="title" id="ttt1">
+						Now you see me 2
+					</p>
+					<p class="rating">
+						<i class="fas fa-star" id="rat1" style="color: yellow;"> 6.5/10</i>
+					</p>
+					<p style="position: absolute; top: 4.5vw; left: 3.2vw;">
+						<i onclick="hatm('https://www.youtube.com/embed/4I8rVcSQbic')" id="y1" class="far fa-play-circle play"></i>
+					</p>
+					<p class="oop1" id="tra1">
+						trailer
+					</p>
+				</div>
+			</div><div class="rizbandy" id="riz2">#2</div></li>
+
+			<li><div class="rasm" id="rrr3" style="background: url(puzzle/inception.jpg); background-repeat: no-repeat;  background-size: cover; background-position: center; border-radius: 0.5vw;">
+				<div class="after">
+				</div>
+				<div class="name">
+					<p class="title" id="ttt1">
+						Inception 
+					</p>
+					<p class="rating">
+						<i class="fas fa-star" style="color: yellow;" id="rat1"> 8.8/10</i>
+					</p>
+					<p style="position: absolute; top: 4.5vw; left: 3.2vw;">
+						<i onclick="hatm('https://www.youtube.com/embed/YoHD9XEInc0')" id="y1" class="far fa-play-circle play"></i>
+					</p>
+					<p class="oop1" id="tra1">
+						trailer
+					</p>
+				</div>
+			</div><div class="rizbandy" id="riz3">#3</div></li>
+
+			<li><div class="rasm" id="rrr4" style="background: url(puzzle/prst.jpg); background-repeat: no-repeat;  background-size: cover; background-position: center; border-radius: 0.5vw;">
+				<div class="after">
+				</div>
+				<div class="name">
+					<p class="title" id="ttt1">
+						The Prestige
+					</p>
+					<p class="rating">
+						<i class="fas fa-star" style="color: yellow;" id="rat1"> 8.5/10</i>
+					</p>
+					<p style="position: absolute; top: 4.5vw; left: 3.2vw;">
+						<i onclick="hatm('https://www.youtube.com/embed/ijXruSzfGEc')" id="y1" class="far fa-play-circle play"></i>
+					</p>
+					<p class="oop1" id="tra1">
+						trailer
+					</p>
+				</div>
+			</div><div class="rizbandy" id="riz4">#4</div></li>
+
+			
+
+			
+			
+			</li>
+		  </ul>
+	  </div>
+
+</div>
+
+
+<div id="pshten"> Always The Best 4 You</div>
+<div id="shetbwm"> 
+	
+		<a class="zz" href="filmm/puzzle.html">Puzzle</a>
+		<a class="zz" href="filmm/action.html">Action</a>
+		<a class="zz" href="filmm/romance.html">Romance</a>
+	
+		<a class="zz" href="filmm/horor.html">Horor</a>
+		<a class="zz" href="filmm/comedy.html">Comedy</a>
+		<a class="zz" href="filmm/drama.html">Drama</a>
+
+		<a class="zz" href="filmm/fantasy.html">Fantasy</a>
+		<a class="zz" href="filmm/sport.html">Sport</a>
+		<a class="zz" href="filmm/cartoon.html">Cartoon</a>
+		<p id="cpc"><i class="fas fa-copyright"></i> Copyright 2020 Kodo Yousif</p>
+		<p id="classy"><i class="fas fa-glass-cheers"></i> Stay Classy :)</p>
+	<div id="kkk">Devloper: Kodo yousif</div>
+	<div id="rrr"><i class="fas fa-phone-square-alt"></i> +964 7507556391</div>
+	<a id="ffff" href="https://www.facebook.com/koko.like99" target="_blank"><i class="fab fa-facebook"></i> Kodo yousif</a>
+	<div id="axirlogo"></div>
+	<div id="itzkodo">Kodo Yousif</div>
+</div>
+
+
+
+
+
+
+	<!--<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4.1.4/imagesloaded.pkgd.min.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/CSSPlugin.min.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/TextPlugin.min.js"></script>
+	<script src="demo.js"></script>
+	<script type="text/javascript">
+		var modal = document.getElementById('myModal');
+		
+		function hatm( source ){
+			var wanarey = document.getElementById('cinema').src = source;
+			modal.style.display = "block";
+		}
+	
+		var span = document.getElementsByClassName("close")[0];
+	
+		span.onclick = function() { 
+		var wanarey = document.getElementById('cinema').src = "";
+	  	modal.style.display = "none";
+	}       
+	</script>
+	<script>
+		var makeup = document.getElementsByClassName("topic")[0];
+
+		function change(title1 , rasm1 , rating1 , link1 , title2 , rasm2 , rating2 , link2 , title3 , rasm3 , rating3 , link3 ,title4 , rasm4 , rating4 , link4){
+			makeup.style.display = "none";
+
+			var make1 = document.getElementsByClassName("rasm")[0];
+			make1.style.cssText = "background:url("+rasm1+"); background-repeat: no-repeat;  background-size: cover; background-position: center; border-radius: 0.5vw;";
+			document.getElementsByClassName("name")[0].getElementsByTagName("p")[0].innerHTML = title1;
+			document.getElementsByClassName("name")[0].getElementsByTagName("p")[1].getElementsByTagName("i")[0].innerHTML = rating1;
+			document.getElementsByClassName("name")[0].getElementsByTagName("p")[2].getElementsByTagName("i")[0].onclick = function() { hatm(link1) };
+
+			
+			var make2 = document.getElementsByClassName("rasm")[1];
+			make2.style.cssText = "background:url("+rasm2+"); background-repeat: no-repeat;  background-size: cover; background-position: center; border-radius: 0.5vw;";
+			document.getElementsByClassName("name")[1].getElementsByTagName("p")[0].innerHTML = title2;
+			document.getElementsByClassName("name")[1].getElementsByTagName("p")[1].getElementsByTagName("i")[0].innerHTML = rating2;
+			document.getElementsByClassName("name")[1].getElementsByTagName("p")[2].getElementsByTagName("i")[0].onclick = function() { hatm(link2) };
+
+
+			var make2 = document.getElementsByClassName("rasm")[2];
+			make2.style.cssText = "background:url("+rasm3+"); background-repeat: no-repeat;  background-size: cover; background-position: center; border-radius: 0.5vw;";
+			document.getElementsByClassName("name")[2].getElementsByTagName("p")[0].innerHTML = title3;
+			document.getElementsByClassName("name")[2].getElementsByTagName("p")[1].getElementsByTagName("i")[0].innerHTML = rating3;
+			document.getElementsByClassName("name")[2].getElementsByTagName("p")[2].getElementsByTagName("i")[0].onclick = function() { hatm(link3) };
+			
+
+			var make2 = document.getElementsByClassName("rasm")[3];
+			make2.style.cssText = "background:url("+rasm4+"); background-repeat: no-repeat;  background-size: cover; background-position: center; border-radius: 0.5vw;";
+			document.getElementsByClassName("name")[3].getElementsByTagName("p")[0].innerHTML = title4;
+			document.getElementsByClassName("name")[3].getElementsByTagName("p")[1].getElementsByTagName("i")[0].innerHTML = rating4;
+			document.getElementsByClassName("name")[3].getElementsByTagName("p")[2].getElementsByTagName("i")[0].onclick = function() { hatm(link4) };
+
+
+			setTimeout(rechange,700);
+		}
+
+		function rechange(){
+			makeup.style.display = "block";
+		}
+
+	</script>
+</body>
+</html>
